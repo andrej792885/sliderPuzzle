@@ -23,40 +23,47 @@ this.system = this.system || {};
                 mainImage:"slider"
             },
             level2:{
-                rows:4,
+                rows:3,
                 columns:3,
-                fieldWidth:266,
-                fieldHeight:225,
+                fieldWidth:300,
+                fieldHeight:300,
                 mainImage:"slider2"
             },
             level3:{
-                rows:4,
-                columns:4,
-                fieldWidth:250,
-                fieldHeight:150,
+                rows:3,
+                columns:3,
+                fieldWidth:300,
+                fieldHeight:300,
                 mainImage:"slider3"
             },
             level4:{
-                rows:5,
-                columns:4,
-                fieldWidth:175,
-                fieldHeight:180,
+                rows:3,
+                columns:3,
+                fieldWidth:300,
+                fieldHeight:300,
                 mainImage:"slider4"
             },
             level5:{
-                rows:5,
-                columns:5,
-                fieldWidth:180,
-                fieldHeight:180,
+                rows:3,
+                columns:3,
+                fieldWidth:300,
+                fieldHeight:300,
                 mainImage:"slider5"
             },
             level6:{
-                rows:5,
-                columns:5,
-                fieldWidth:200,
-                fieldHeight:120,
+                rows:3,
+                columns:3,
+                fieldWidth:300,
+                fieldHeight:300,
                 mainImage:"slider6"
-            }
+            },
+            level7:{
+                rows:4,
+                columns:3,
+                fieldWidth:225,
+                fieldHeight:225,
+                mainImage:"slider"
+            },
         }
     };
     
