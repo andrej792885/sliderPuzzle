@@ -94,7 +94,7 @@ this.system = this.system || {};
 
             levelBtn.name = num;
 
-            if(solvedLevels.hasOwnProperty(num)){ // addSticker se poziva ovde posto paginacija sklanja sve dugmice
+            if(solvedLevels.hasOwnProperty(num)){
                 levelBtn.showSticker(true);
                 levelBtn.updateBestTimeTxt(system.CustomMethods.formatTime(solvedLevels[num]));
             }else{

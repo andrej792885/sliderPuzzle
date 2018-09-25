@@ -71,7 +71,7 @@ this.system = this.system || {};
 
         this.addChild(logo , playBtn , optionsBtn, sliderProgressionTxt , totalTimePlayedTxt , options);
         this.setPlayerInfo();
-        this.addGame(6);
+        this.addGame(12);
         this.showMainGameComponents(true);
     };
 
@@ -91,7 +91,7 @@ this.system = this.system || {};
     };
 
     p.setPlayerInfo = function () {
-        let stats = JSON.parse(localStorage.getItem("playerStats"));
+        let stats = JSON.parse(localStorage.getItem("sliderPlayerStats"));
         if(stats === null){
             stats = {
                 "sliderPuzzleSolvedLevels": {},
@@ -99,7 +99,7 @@ this.system = this.system || {};
                 "solveCreditsBarLevel": 0,
                 "totalTimePlayed":0
             };
-            localStorage.setItem("playerStats" , JSON.stringify(stats));
+            localStorage.setItem("sliderPlayerStats" , JSON.stringify(stats));
         }
         console.log(stats);
         this.player = new system.Player(stats);
@@ -122,7 +122,7 @@ this.system = this.system || {};
             "solveCreditsBarLevel": this.player.solveCreditsBarLevel,
             "totalTimePlayed": this.player.totalTimePlayed
         };
-        localStorage.setItem("playerStats" , JSON.stringify(stats));
+        localStorage.setItem("sliderPlayerStats" , JSON.stringify(stats));
     };
 
     p.updateTotalTimePlayedTxt = function() {
@@ -131,7 +131,7 @@ this.system = this.system || {};
 
     p.updateProgressionTxt = function () {
         const numberOfSolvedLevels = Object.keys(this.player.sliderPuzzleSolvedLevels).length;
-        this._sliderProgressionTxt.text = "Progression: " + Math.round((100/6) * numberOfSolvedLevels) + "%";//100/numLevels*solved
+        this._sliderProgressionTxt.text = "Progression: " + Math.round((100/12) * numberOfSolvedLevels) + "%";//100/numLevels*solved
     };
 
     p.render = function(e){
