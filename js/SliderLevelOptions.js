@@ -98,6 +98,48 @@ this.system = this.system || {};
                 fieldWidth:225,
                 fieldHeight:225,
                 mainImage:"slider12"
+            },
+            level13:{
+                rows:4,
+                columns:4,
+                fieldWidth:225,
+                fieldHeight:225,
+                mainImage:"slider13"
+            },
+            level14:{
+                rows:4,
+                columns:4,
+                fieldWidth:225,
+                fieldHeight:225,
+                mainImage:"slider14"
+            },
+            level15:{
+                rows:4,
+                columns:4,
+                fieldWidth:225,
+                fieldHeight:225,
+                mainImage:"slider15"
+            },
+            level16:{
+                rows:4,
+                columns:4,
+                fieldWidth:225,
+                fieldHeight:225,
+                mainImage:"slider16"
+            },
+            level17:{
+                rows:4,
+                columns:4,
+                fieldWidth:225,
+                fieldHeight:225,
+                mainImage:"slider17"
+            },
+            level18:{
+                rows:4,
+                columns:4,
+                fieldWidth:225,
+                fieldHeight:225,
+                mainImage:"slider18"
             }
         }
     };

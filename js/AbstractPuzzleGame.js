@@ -139,7 +139,7 @@ this.system = this.system || {};
         this.showInGameButtons(true);
         this._puzzleIsLoaded = true;
 
-        system.CustomMethods.swapImages(this.solvedImage , this.board.mainImage);
+        system.CustomMethods.swapImages(this.solvedImage , this.board.mainImage,false,false);
         this.solvedImage.x = this.board.x;
         this.solvedImage.y = -(this.solvedImage.image.height);
 

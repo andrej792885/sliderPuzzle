@@ -90,7 +90,7 @@ this.system = this.system || {};
             const level = "level" + num;
             const levelBtn = this.levelsBtns.getChildAt(childInd);
             const imgName = this.levelsOptions.options[level].mainImage;
-            system.CustomMethods.swapImages(levelBtn.getChildAt(0) , imgName);
+            system.CustomMethods.swapImages(levelBtn.getChildAt(0) , imgName , true , false);
 
             levelBtn.name = num;
 

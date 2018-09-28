@@ -74,7 +74,7 @@ this.system = this.system || {};
 
     p.changeBackground = function(back,clickedButton) {
         if(clickedButton.name === this._selectedBackground){return;}
-        system.CustomMethods.swapImages(back,clickedButton.name);
+        system.CustomMethods.swapImages(back,clickedButton.name,false,false);
         this._backgroundButtons.forEach((button)=>{
             button.alpha = 0.5;
         });

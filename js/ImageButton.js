@@ -49,8 +49,6 @@ this.system = this.system || {};
 
     p.addBestTime = function () {
         const text = this._bestTimeTxt = system.CustomMethods.makeText("" , "28px Russo One" , "white" , "center" , "alphabetic");
-        text.x = this.getButtonWidth()/2;
-        console.log(this.getButtonWidth());
         text.y = (this.getButtonHeight() * this.scaleNum) + 30;
         this.addChild(text);
     };

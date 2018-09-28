@@ -21,8 +21,10 @@ this.system = this.system || {};
         return img;
     };
 
-    CustomMethods.swapImages = function(original , newImage){
+    CustomMethods.swapImages = function(original , newImage , updateRegX , updateRegY){
         original.image = queue.getResult(newImage);
+        if(updateRegX === true){original.regX = original.image.width/2;}
+        if(updateRegY === true){original.regY = original.image.height/2;}
     };
 
     CustomMethods.makeImageFromAtlas = function (atlas , json , imgName) {
