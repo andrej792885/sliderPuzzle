@@ -71,7 +71,7 @@ this.system = this.system || {};
 
         this.addChild(logo , playBtn , optionsBtn, sliderProgressionTxt , totalTimePlayedTxt , options);
         this.setPlayerInfo();
-        this.addGame(18);
+        this.addGame(12);
         this.showMainGameComponents(true);
     };
 
@@ -95,7 +95,7 @@ this.system = this.system || {};
         if(stats === null){
             stats = {
                 "sliderPuzzleSolvedLevels": {},
-                "solveCredits": 10,
+                "solveCredits": 0,
                 "solveCreditsBarLevel": 0,
                 "totalTimePlayed":0
             };
@@ -131,7 +131,7 @@ this.system = this.system || {};
 
     p.updateProgressionTxt = function () {
         const numberOfSolvedLevels = Object.keys(this.player.sliderPuzzleSolvedLevels).length;
-        this._sliderProgressionTxt.text = "Progression: " + Math.round((100/18) * numberOfSolvedLevels) + "%";//100/numLevels*solved
+        this._sliderProgressionTxt.text = "Progression: " + Math.round((100/12) * numberOfSolvedLevels) + "%";//100/numLevels*solved
     };
 
     p.render = function(e){

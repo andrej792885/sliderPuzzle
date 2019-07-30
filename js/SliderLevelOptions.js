@@ -98,8 +98,8 @@ this.system = this.system || {};
                 fieldWidth:225,
                 fieldHeight:225,
                 mainImage:"slider12"
-            },
-            level13:{
+            }
+/*            level13:{
                 rows:4,
                 columns:4,
                 fieldWidth:225,
@@ -140,7 +140,7 @@ this.system = this.system || {};
                 fieldWidth:225,
                 fieldHeight:225,
                 mainImage:"slider18"
-            }
+            }*/
         }
     };
     
